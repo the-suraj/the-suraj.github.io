@@ -2,3 +2,17 @@
     font-family: 'Segoe UI', Tahoma, Geneva, sans-serif;
     font-size: large;
 }
+/* Light mode */
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: white;
+        color: #000;
+    }
+}
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #000;
+        color: white;
+    }
+}

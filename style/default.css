@@ -1,0 +1,28 @@
+:root {
+    font-family: 'Segoe UI', Tahoma, Geneva, sans-serif;
+    font-size: large;
+    --background-color: initial;
+    --color: initial;
+    margin: 0;
+    padding: 0;
+}
+@media (prefers-color-scheme: light) {
+    body {
+        --background-color: white;
+        --color: #000;
+    }
+}
+@media (prefers-color-scheme: dark) {
+    body {
+        --background-color: #000;
+        --color: white;
+    }
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--color);
+}
+img {
+    width: 100%;
+}

@@ -6,30 +6,135 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Suraj Jha | Home | Personal Website</title>
-    <link rel="stylesheet" href="./style/main.css">
-    <link rel="stylesheet" href="./style/default.css">
+    <link rel="stylesheet" href="./stylesheets/default.css">
+    <link rel="stylesheet" href="./stylesheets/main.css">
+    <link rel="stylesheet" href="./stylesheets/header.css">
+    <link rel="stylesheet" href="./stylesheets/hambergerMenuBtn.css">
+    <link rel="stylesheet" href="./stylesheets/sideNavBar.css">
+
+    <link rel="stylesheet" href="./stylesheets/card.css">
+    <link rel="stylesheet" href="./stylesheets/ripple.css">
 </head>
 
 <body>
     <header id="body-header">
-        <h1>Suraj Jha</h1>
+        <label id="sidebar-btn" class="hamberger-menu-btn" for="sidebar-btn-checkBox">
+            <input type="checkbox" name="sidebar-btn-checkBox" id="sidebar-btn-checkBox" style="display: none;">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </label>
+        <h1 id="branding-h">JHA SURAJ <span class="small">.com</span></h1>
     </header>
-    <nav id="side-nav-bar">
-        <a href="#">Home</a>
-        <a href="./about/index.htm">About</a>
-        <a href="./contact/index.htm">Contact</a>
+    <nav id="side-navBar">
+        <label for="secondary-menu-close-btn" style="display: flex; justify-content: flex-end; ">
+            <button id="secondary-menu-close-btn"
+                onclick="document.getElementById('sidebar-btn-checkBox').click();"><svg
+                    style="fill: gray; width: 100%; height: 100%;" viewBox="0 0 47.971 47.971">
+                    <path
+                        d="M28.228,23.986L47.092,5.122c1.172-1.171,1.172-3.071,0-4.242c-1.172-1.172-3.07-1.172-4.242,0L23.986,19.744L5.121,0.88c-1.172-1.172-3.07-1.172-4.242,0c-1.172,1.171-1.172,3.071,0,4.242l18.865,18.864L0.879,42.85c-1.172,1.171-1.172,3.071,0,4.242C1.465,47.677,2.233,47.97,3,47.97s1.535-0.293,2.121-0.879l18.865-18.864L42.85,47.091c0.586,0.586,1.354,0.879,2.121,0.879s1.535-0.293,2.121-0.879c1.172-1.171,1.172-3.071,0-4.242L28.228,23.986z" />
+                </svg></button>
+        </label>
+        <div class="nav-types" style="display: none;">
+            <a href="./about/" class="nav-items" target="_blank" title="Click here to know about the App">About</a>
+            <a href="./contact/" class="nav-items" target="_blank" title="Click here to know about the App">Contact</a>
+        </div>
+        <div class="nav-types">
+            <a href="https://github.com/the-suraj/" class="nav-items" target="_blank"
+                rel="noopener noreferrer">Github</a>
+            <a href="https://www.instagram.com/jhasuraj_/" class="nav-items" target="_blank"
+                rel="noopener noreferrer">Instagram</a>
+        </div>
+        <div class="nav-types">
+            <p>&copy; Suraj Jha 2019-2020</p>
+            <p>All rights reserved</p>
+        </div>
     </nav>
     <section id="welcome-section">
-        <p>Welcome to my personal Website</p>
+        <p style="text-align: center;">Welcome to my personal Website</p>
     </section>
     <main id="main">
-        <p>This Site is currently under Development, kindly visit later</p>
+        <p style="text-align: center;">This Site is currently under Development, till then you can explore some of my projects</p>
+        <section>
+            <h4 style="text-align: center;">MY PROJECTS</h4>
+            <div class="projects-container">
+                <section class="card" style="padding-top: 1em;">
+                    <div class="card-gallery" data-displaying_image="0">
+                        <img src="./images/les/icon.svg" alt="icon" class="card-image" style="z-index: auto; object-fit: contain;">
+                        <!-- <img src="./images/passGen/daymode1.png" alt="card1 img5" class="card-image" style="z-index: -1; object-position: top;">
+                        <img src="./images/passGen/daymode2.jpg" alt="card1 img4" class="card-image" style="z-index: -1; object-position: top;">
+                        <img src="./images/passGen/nightmode1.png" alt="card1 img3" class="card-image" style="z-index: -1; object-position: top;">
+                        <img src="./images/passGen/nightmode2.jpg" alt="card1 img1" class="card-image" style="z-index: -1; object-position: top;"> -->
+                    </div>
+                    <button class="previous-card-image-button" style="visibility: hidden; display: none;" ><svg viewBox="0 0 24 24" class="icon-svg"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" /></svg></button>
+                    <button class="next-card-image-button" style="display: none;"><svg viewBox="0 0 24 24" class="icon-svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" /></svg></button>
+                    <div class="card-image-navigator" style="display: none;">
+                        <button class="card-image-navigator-btn" data-pointing-card-image="1">1</button>
+                        <button class="card-image-navigator-btn" data-pointing-card-image="1">2</button>
+                        <button class="card-image-navigator-btn" data-pointing-card-image="1">3</button>
+                        <button class="card-image-navigator-btn" data-pointing-card-image="1">4</button>
+                        <button class="card-image-navigator-btn" data-pointing-card-image="1">5</button>
+                    </div>
+                    <div class="card-header">
+                        <h3 class="card-header-text">Linear Equation Solver</h3>
+                    </div>
+                    <div class="card-caption">
+                        <p class="card-caption-paragraph">
+                            Online linear equations solver. It is
+                            a smart application which solves a system of linear equations with multiple variables easier than ever.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="card-navigator">
+                            <a class="card-navigator-button" title="Open in New Tab" href="https://jhasuraj.com/les/" target="_blank"><svg viewBox="0 0 24 24" class="card-navigator-button-icon"><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z" /></svg></a>
+                            <button style="display: none;" class="card-navigator-button" title="Share"><svg viewBox="0 0 59 59"class="card-navigator-button-icon"><path d="M47,39c-2.671,0-5.182,1.04-7.071,2.929c-0.524,0.524-0.975,1.1-1.365,1.709l-17.28-10.489C21.741,32.005,22,30.761,22,29.456c0-1.305-0.259-2.549-0.715-3.693l17.284-10.409C40.345,18.142,43.456,20,47,20c5.514,0,10-4.486,10-10S52.514,0,47,0S37,4.486,37,10c0,1.256,0.243,2.454,0.667,3.562L20.361,23.985c-1.788-2.724-4.866-4.529-8.361-4.529c-5.514,0-10,4.486-10,10s4.486,10,10,10c3.495,0,6.572-1.805,8.36-4.529L37.664,45.43C37.234,46.556,37,47.759,37,49c0,2.671,1.04,5.183,2.929,7.071C41.818,57.96,44.329,59,47,59s5.182-1.04,7.071-2.929C55.96,54.183,57,51.671,57,49s-1.04-5.183-2.929-7.071C52.182,40.04,49.671,39,47,39z" /></svg></button>
+                        </div>
+                    </div>
+                </section>
+                <section class="card" style="padding-top: 1em;">
+                    <div class="card-gallery" data-displaying_image="0">
+                        <img src="./images/passGen/icon.svg" alt="icon" class="card-image" style="z-index: auto; object-fit: contain;">
+                        <!-- <img src="./images/passGen/daymode1.png" alt="Day mode img1" class="card-image" style="z-index: -1; object-position: top;">
+                        <img src="./images/passGen/daymode2.jpg" alt="card1 img4" class="card-image" style="z-index: -1; object-position: top;">
+                        <img src="./images/passGen/nightmode1.png" alt="card1 img3" class="card-image" style="z-index: -1; object-position: top;">
+                        <img src="./images/passGen/nightmode2.jpg" alt="card1 img1" class="card-image" style="z-index: -1; object-position: top;"> -->
+                    </div>
+                    <button class="previous-card-image-button" style="visibility: hidden; display: none;"><svg viewBox="0 0 24 24" class="icon-svg"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" /></svg></button>
+                    <button style="display: none;" class="next-card-image-button"><svg viewBox="0 0 24 24" class="icon-svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" /></svg></button>
+                    <div class="card-image-navigator" style="display: none;">
+                        <button class="card-image-navigator-btn" data-pointing-card-image="1">1</button>
+                        <button class="card-image-navigator-btn" data-pointing-card-image="1">2</button>
+                        <button class="card-image-navigator-btn" data-pointing-card-image="1">3</button>
+                        <button class="card-image-navigator-btn" data-pointing-card-image="1">4</button>
+                        <button class="card-image-navigator-btn" data-pointing-card-image="1">5</button>
+                    </div>
+                    <div class="card-header">
+                        <h3 class="card-header-text">Password Generator</h3>
+                    </div>
+                    <div class="card-caption">
+                        <p class="card-caption-paragraph">
+                            Strong Password Generator to create secure passwords that are impossible to crack on your device without sending
+                            them across the Internet
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="card-navigator">
+                            <a target="_blank" href="https://jhasuraj.com/password-generator/" class="card-navigator-button" title="Open in New Tab"><svg viewBox="0 0 24 24" class="card-navigator-button-icon"><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z" /></svg></a>
+                            <button style="display: none;" class="card-navigator-button" title="Share"><svg viewBox="0 0 59 59" class="card-navigator-button-icon"><path d="M47,39c-2.671,0-5.182,1.04-7.071,2.929c-0.524,0.524-0.975,1.1-1.365,1.709l-17.28-10.489C21.741,32.005,22,30.761,22,29.456c0-1.305-0.259-2.549-0.715-3.693l17.284-10.409C40.345,18.142,43.456,20,47,20c5.514,0,10-4.486,10-10S52.514,0,47,0S37,4.486,37,10c0,1.256,0.243,2.454,0.667,3.562L20.361,23.985c-1.788-2.724-4.866-4.529-8.361-4.529c-5.514,0-10,4.486-10,10s4.486,10,10,10c3.495,0,6.572-1.805,8.36-4.529L37.664,45.43C37.234,46.556,37,47.759,37,49c0,2.671,1.04,5.183,2.929,7.071C41.818,57.96,44.329,59,47,59s5.182-1.04,7.071-2.929C55.96,54.183,57,51.671,57,49s-1.04-5.183-2.929-7.071C52.182,40.04,49.671,39,47,39z" /></svg></button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
     </main>
     <footer id="body-footer">
-        <p>Thank You</p>
+        <p style="text-align: center;">Thank You</p>
     </footer>
-    <script src="./script/main.js"></script>
-    <script src="./script/default.js"></script>
+    <script src="./scripts/default.js"></script>
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/sideNavBar.js"></script>
+    <script src="./scripts/ripple.js"></script>
+    <!-- <script src="./scripts/card.js"></script> -->
 </body>
 
 </html>

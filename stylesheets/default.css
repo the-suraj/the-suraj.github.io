@@ -2,7 +2,13 @@
     font-size: large;
     --background-color: white;
     --color: black;
-    --big-box-shadow: rgba(149, 243, 255, 0.1);
+    
+    /* Font Colors */
+    --mid-font-light: 30%;
+
+    /* Box Shadows */
+    --shadow-light: 0%;
+
     margin: 0;
     padding: 0;
     background-color: var(--background-color);
@@ -47,7 +53,12 @@ button:active, button:focus, button, label:active, label:focus, label {
     body {
         --background-color: #000;
         --color: #ebebeb;
-        --big-box-shadow: rgba(255, 0, 0, 0.2);
+        
+        /* Font Color */
+        --mid-font-light: 60%;
+
+        /* box Shadow */
+        --shadow-light: 50%;
     }
 }
 

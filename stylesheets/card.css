@@ -13,6 +13,7 @@
     justify-content: stretch;
     border-radius: 0.5em;
     box-shadow: 0 3px 1px -2px rgba(0,0,0,.2),0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12);
+    box-shadow: 0 3px 1px -2px hsla(0, 0%, var(--shadow-light), 0.2),0 2px 2px 0 hsla(0, 0%, var(--shadow-light), 0.14),0 1px 5px 0 hsla(0, 0%, var(--shadow-light), 0.12);
 }
 .card .card-gallery {
     flex: 1 1 50%;
@@ -30,9 +31,11 @@
         border-radius: var(--small-radius);
         border-bottom-right-radius: var(--big-radius);
         box-shadow: 0 3px 5px -1px rgba(0,0,0,.2),0 5px 8px 0 rgba(0,0,0,.14),0 1px 14px 0 rgba(0,0,0,.12);
+        box-shadow: 0 3px 5px -1px hsla(0, 0%, var(--shadow-light), 0.2),0 5px 8px 0 hsla(0, 0%, var(--shadow-light), 0.14),0 1px 14px 0 hsla(0, 0%, var(--shadow-light), 0.12);
     }
     .card:hover {
         box-shadow: 0 4px 5px -2px rgba(0,0,0,.2),0 7px 10px 1px rgba(0,0,0,.14),0 2px 16px 1px rgba(0,0,0,.12);
+        box-shadow: 0 4px 5px -2px hsla(0, 0%, var(--shadow-light), 0.2),0 7px 10px 1px hsla(0, 0%, var(--shadow-light), 0.14),0 2px 16px 1px hsla(0, 0%, var(--shadow-light), 0.12);
     }
     .card .card-gallery {
         border-top-left-radius: var(--small-radius);
@@ -146,7 +149,8 @@
     font-size: normal;
     margin: 0.3em 1em;
     text-align: justify;
-    color: rgb(85, 85, 85);
+    color: #4d4d4d;
+    color: hsl(0, 0%, var(--mid-font-light));
 }
 
 
@@ -185,5 +189,6 @@
 .card-navigator-button-icon {
     width: 1.5em;
     height: 1.5em;
-    fill: rgb(83, 83, 83);
+    fill: #4d4d4d;
+    fill: hsl(0, 0%, var(--mid-font-light));
 }

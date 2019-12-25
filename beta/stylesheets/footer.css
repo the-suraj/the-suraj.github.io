@@ -1,0 +1,49 @@
+/*  ------------------------------
+    body Footer
+    ------------------------------  */
+#body-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2em 0;
+    border-top:  0.1em solid darkcyan;
+    background-color: var(--background-color);
+    color: var(--color);
+}
+.copyright {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    font-size: inherit;
+}
+.share-container, .contact-container {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    text-align: center;
+    text-transform: uppercase;
+}
+.icons-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.share-container a, .contact-container a , .share-container button, .contact-container button{
+    margin: 0.2em;
+    height: 1.8em;
+    width: 1.8em;
+    text-align: center;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 0;
+}
+.social-icon {
+    fill: gray;
+    transition: fill 300ms;
+}
+.social-icon:active, .social-icon:focus, .social-icon:hover {
+    fill: var(--color); /* color variable is set in default.css */
+}

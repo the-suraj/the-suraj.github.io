@@ -6,7 +6,6 @@
     margin: 0;
     padding: 0.6em 0.3em;
     background-color: var(--background-color);
-    box-shadow: 0 0 5px 2px hsla(0, 0%, var(--shadow-light), 0.5);
     box-shadow: 0 3px 5px -1px rgba(0,0,0,.2),0 5px 8px 0 rgba(0,0,0,.14),0 1px 14px 0 rgba(0,0,0,.12);
     box-shadow: 0 3px 5px -1px hsla(0, 0%, var(--shadow-light), 0.2),0 5px 8px 0 hsla(0, 0%, var(--shadow-light), 0.14),0 1px 14px 0 hsla(0, 0%, var(--shadow-light), 0.12);
 }
@@ -33,18 +32,4 @@
 .small {
     font-size: small;
     color: hsl(180, 100%, 25%);
-}
-
-@media (max-width: 21em) {
-    #branding-h {
-        text-transform: uppercase;
-        font-size: large;
-    }
-    .small {
-        font-size: x-small;
-    }
-    #sidebar-btn {
-        --hamberger-menu-btn-width: 1.5em;
-        --hamberger-menu-btn-height: 1.125em;
-    }
 }

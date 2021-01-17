@@ -67,7 +67,7 @@
 }
 
 .frame .main .navbar a {
-  text-decoration: none;
+  vertical-align: middle;
   color: #AE6F58;
   cursor: pointer;
 }

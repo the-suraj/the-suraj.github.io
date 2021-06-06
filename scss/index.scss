@@ -1,10 +1,11 @@
 @import "./default";
+@import "./theme";
 
 .frame {
     display: flex;
     width: 100vw;
     height: 100vh;
-    background-color: #f2f2f2;
+    background-color: var(--bgc);
 
     .social-links {
         display: flex;
@@ -12,12 +13,12 @@
         justify-content: flex-end;
         gap: 32px;
         padding: 32px;
-        background-color: #fff;
+        background-color: var(--bgc-nav);
     }
 
     .main {
         flex-grow: 1;
-        background-color: #EFDED2;
+        background-color: var(--bgc);
 
         display: flex;
         flex-direction: column;
@@ -30,7 +31,7 @@
 
             a {
                 vertical-align: middle;
-                color: #AE6F58;
+                color: var(--color);
                 cursor: pointer;
             }
         }
@@ -51,12 +52,13 @@
             .profile-container {
                 img {
                     border-radius: 50%;
-                    border: 3px solid #AE6F58;
+                    border: 5px solid var(--img-border);
+                    background: var(--bgc-img);
                 }
             }
 
             .text-container {
-                color: #AE6F58;
+                color: var(--color);
 
                 .text {
                     display: flex;
@@ -139,7 +141,8 @@
             a {
                 width: 24px;
                 height: 24px;
-                img {
+                    color: var(--icon)
+                svg {
                     width: 100%;
                     height: 100%;
                 }

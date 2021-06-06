@@ -1,0 +1,19 @@
+body {
+    --bgc: #EFDED2;
+    --bgc-nav: #FFFFFF;
+    --bgc-img: #E9D1C0;
+    --img-border: #AE6F58;
+    --color: #AE6F58;
+    --icon: #AE6F58;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        --bgc: #2F3240;
+        --bgc-nav: #645F65;
+        --bgc-img: #C4C7D4;
+        --img-border: #2F3240;
+        --color: #CEBADE;
+        --icon: #F3EEF7;
+    }
+}
